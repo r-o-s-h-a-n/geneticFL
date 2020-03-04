@@ -5,6 +5,7 @@ import datetime
 import numpy as np
 import experiments as exp
 
+os.environ['CUDA_VISIBLE_DEVICES'] = '-1'
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--exp', type=str, required=True, default='', help='config file with parameters of the experiment')
